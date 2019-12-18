@@ -13,6 +13,7 @@ Route.group(() => {
   Route.post('/files', 'FileController.store');
 
   Route.resource('projects', 'ProjectController').apiOnly();
+  Route.resource('project.tasks', 'TaskController').apiOnly();
 }).middleware(['auth']);
 
 
