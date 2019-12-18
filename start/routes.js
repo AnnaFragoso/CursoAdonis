@@ -3,10 +3,13 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
 
-Route.post('/user', 'UserController.store');
+Route.post('/user', 'UserController.store').validator('User');
+
 Route.post('/session', 'SessionController.store');
+
 Route.post('/passwords', 'ForgotPasswordController.store');
 Route.put('/passwords', 'ForgotPasswordController.update');
+
 Route.get('/files/:id', 'FileController.show');
 
 Route.group(() => {
