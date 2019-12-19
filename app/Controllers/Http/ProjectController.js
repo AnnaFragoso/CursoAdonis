@@ -8,7 +8,7 @@ class ProjectController {
     const projects = await Project
                             .query()
                             .with('user')
-                            .fetch();
+                            .paginate(1);
 
     return projects;
   }
