@@ -14,9 +14,9 @@ class Project {
     }
   }
 
-  // get messages() {
-  //   return Antl.list('validation');
-  // }
+  get messages() {
+    return Antl.list('validation');
+  }
 }
 
 module.exports = Project

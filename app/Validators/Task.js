@@ -14,9 +14,9 @@ class Task {
     }
   }
 
-  // get messages() {
-  //   return Antl.list('validation');
-  // }
+  get messages() {
+    return Antl.list('validation');
+  }
 }
 
 module.exports = Task
